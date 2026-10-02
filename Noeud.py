@@ -43,3 +43,6 @@ n_1.affichage()
 print("\n")
 
 '''SHARUKKKKK SALUT HIII'''
+'fduisbdvj'
+
+'rgtgrege'
