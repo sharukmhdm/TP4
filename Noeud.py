@@ -1,23 +1,28 @@
-class noeud:
+class Noeud:
+    """Représente un nœud dans un arbre de calcul."""
+
     def __init__(self, valeur, enfants):
-        
         self.valeur = valeur 
         self.enfants = []
         self.enfants.append(enfants)
 
     def ajouter_enfant(self, enfants):
-        
+        """Ajoute un enfant à la liste des enfants du nœud."""
         self.enfants.append(enfants)
 
     def affichage(self):
-       # if isinstance (str, self.valeur):
-        #    if isinstance (int, self.enfants):
-         #       print(self.valeur,"(",self.enfants,")")
-        print (self.valeur,end="")
-        print (self.enfants)
+        """Affiche la valeur du nœud et la liste de ses enfants."""
+        print(self.valeur, end="")
+        print(self.enfants)
 
-    
-n_1 = noeud("exp",0)
+    def evaluer(self):
+        """Évalue la valeur du nœud."""
+        pass
+
+
+dictionnaire = {}
+
+n_1 = Noeud("exp", 0)
 
 print("\n")
 n_1.ajouter_enfant(3)
